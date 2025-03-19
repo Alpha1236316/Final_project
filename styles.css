@@ -1,0 +1,320 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    background: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.banner img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+h2 {
+    background:green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.site-title {
+    color: #444;
+}
+
+.site-title h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.site-title h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Main navigation */
+.main-nav {
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+}
+
+.main-nav ul li a:hover {
+    color: #009944;
+}
+
+/* Slider section */
+.slider {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-controls button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Quick links section - Green navigation boxes */
+.quick-links {
+    display: flex;
+    background-color: white;
+}
+
+.link-box {
+    background-color: white;
+    width: 25%;
+    text-align: center;
+    padding: 20px 10px;
+    color: white;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.link-box:last-child {
+    border-right: none;
+}
+
+.link-box img {
+    width: 70px;
+    height: 70px;
+    
+    margin-bottom: 10px;
+}
+
+.link-box h3 {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Content section */
+.content-section {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+}
+
+.left-column {
+    width: 33%;
+    padding-right: 15px;
+}
+
+.middle-column {
+    width: 34%;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    padding: 0 15px;
+}
+
+.right-column {
+    width: 33%;
+    padding-left: 15px;
+}
+
+/* Section headers */
+.section-header {
+    background-color: #009944;
+    color: white;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+}
+
+.section-header h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* News section */
+.news-item {
+    display: flex;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.news-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.news-content h4 {
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+.news-content p {
+    font-size: 11px;
+    color: #888;
+}
+
+/* About section */
+.about-content {
+    font-size: 12px;
+    color: #555;
+    text-align: justify;
+}
+
+/* Alerts section */
+.alerts ul {
+    list-style: none;
+}
+
+.alerts ul li {
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.alerts ul li:before {
+    content: "▶";
+    color: #009944;
+    position: absolute;
+    left: 0;
+    font-size: 10px;
+}
+
+.alerts ul li a {
+    text-decoration: none;
+    color: #444;
+    font-size: 13px;
+}
+
+.alerts .highlight {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+/* Events section */
+.events {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #009944;;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+    }
+    
+    .left-column, .middle-column, .right-column {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+        border: none;
+    }
+    
+    .quick-links {
+        flex-wrap: wrap;
+    }
+    
+    .link-box {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .link-box {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-nav ul li {
+        margin: 5px 0;
+    }
+}
